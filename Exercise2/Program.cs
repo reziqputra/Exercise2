@@ -102,7 +102,22 @@
         static void Main(string[] args)
         {
             program myList = new program();
-            int pilihanmenu
+            int pilihanmenu;
+            do
+            {
+                Console.WriteLine("Menu Option");
+                Console.WriteLine("================");
+                Console.WriteLine("1. Bublesort");
+                Console.WriteLine("2. Quicksort");
+                Console.WriteLine("3. Exit");
+                Console.Write("Enter your choise (1,2,3) : ");
+                pilihanmenu = Convert.ToInt32(Console.ReadLine());
+
+                switch(pilihanmenu)
+                {
+
+                }
+            }
         }
     }
 }
