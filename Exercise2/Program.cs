@@ -34,7 +34,7 @@
             }
         }
 
-        void swap(int x, int y)
+        public void swap(int x, int y)
         {
             int temp;
             temp = reziq[x];
@@ -115,9 +115,25 @@
 
                 switch(pilihanmenu)
                 {
-
+                    case 1:
+                        Console.WriteLine("");
+                        Console.WriteLine("...................");
+                        Console.WriteLine("Bublesort");
+                        Console.WriteLine("...................");
+                        myList.input();
+                        myList.BubbleSortArray();
+                        break;
+                    case 2:
+                        Console.WriteLine("");
+                        Console.WriteLine("..................");
+                        Console.WriteLine("QuickSort");
+                        Console.WriteLine("..................");
+                        myList.input();
+                        myList.swap
                 }
-            }
+                Console.WriteLine("\n\nPress Return to Exit. ");
+                Console.ReadLine();
+            } while(pilihanmenu != 3);
         }
     }
 }
