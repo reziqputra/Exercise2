@@ -8,25 +8,24 @@
 
         int i;
 
-        int RP;
 
         public void input()
         {
             while(true)
             {
-                Console.Write('Enter the number of element in the array: ');
+                Console.Write("Enter the number of element in the array: ");
                 string s = Console.ReadLine();
                 n = Int32.Parse(s);
                 if ((n > 0) && (n <= 66))
                     break;
                 else
-                    Console.WriteLine('\nArray should have minimum 1 and maximum 66 elements. \n');
+                    Console.WriteLine("\nArray should have minimum 1 and maximum 66 elements. \n");
             }
-            Console.WriteLine('');
-            Console.WriteLine('---------------------');
-            Console.WriteLine(' Enter array elements');
-            Console.WriteLine('---------------------');
-            for(RP = 0; RP < n; RP++)
+            Console.WriteLine("");
+            Console.WriteLine("---------------------");
+            Console.WriteLine(" Enter array elements");
+            Console.WriteLine("---------------------");
+            for(i = 0; i < n; i++)
             {
                 Console.Write('<' + (i + 1) + '>');
                 string s1 = Console.ReadLine();
@@ -37,7 +36,13 @@
         {
             for (int i = 1; i < n; i++)
             {
-                if(reziq[RP])
+                for (int RP = 1; RP < n; RP++)
+                {
+                    int temp;
+                    temp = reziq[RP];
+                    reziq[RP] = reziq[RP + 1];
+                    reziq[RP + 1] = temp;
+                }
             }
         }
     }
