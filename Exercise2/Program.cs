@@ -67,13 +67,37 @@
 
             while(i <= RP)
             {
-                while((reziq[i] <= pivot && (i <= high))
+                while((reziq[i]) <= pivot && (i <= high))
                 {
                     i++;
                     cmp_count++;
                 }
+                cmp_count++;
 
+                while ((reziq[RP]) > pivot && (RP >= low))
+                {
+                    RP--;
+                    cmp_count++;
+                }
+                cmp_count++;
+
+                if (i < RP)
+                {
+                    swap(i,RP);
+                    mov_count++;
+                }
             }
+
+            if(low < RP)
+            {
+                swap(low, RP);
+                mov_count++;
+            }
+
+            q_sort(low, RP - 1);
+
+            q_sort(RP + 1, high);
         }
+
     }
 }
