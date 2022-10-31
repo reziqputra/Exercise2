@@ -99,5 +99,10 @@
             q_sort(RP + 1, high);
         }
 
+        static void Main(string[] args)
+        {
+            program myList = new program();
+            int pilihanmenu
+        }
     }
 }
