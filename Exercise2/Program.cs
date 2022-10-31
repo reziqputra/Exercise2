@@ -8,6 +8,8 @@
 
         int i;
 
+        int RP;
+
         public void input()
         {
             while(true)
@@ -24,11 +26,18 @@
             Console.WriteLine('---------------------');
             Console.WriteLine(' Enter array elements');
             Console.WriteLine('---------------------');
-            for(i = 0; i < n; i++)
+            for(RP = 0; RP < n; RP++)
             {
                 Console.Write('<' + (i + 1) + '>');
                 string s1 = Console.ReadLine();
                 reziq[i] = Int32.Parse(s1);
+            }
+        }
+        public void BubbleSortArray()
+        {
+            for (int i = 1; i < n; i++)
+            {
+                if(reziq[RP])
             }
         }
     }
