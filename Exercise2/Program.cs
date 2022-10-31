@@ -32,6 +32,14 @@
                 reziq[i] = Int32.Parse(s1);
             }
         }
+
+        void swap(int x, int y)
+        {
+            int temp;
+            temp = reziq[x];
+            reziq[x] = reziq[y];
+            reziq[y] = temp;
+        }
         public void BubbleSortArray()
         {
             for (int i = 1; i < n; i++)
@@ -44,6 +52,10 @@
                     reziq[RP + 1] = temp;
                 }
             }
+        }
+        public void q_sort(int low, int high)
+        {
+            int pivot, i, j;
         }
     }
 }
