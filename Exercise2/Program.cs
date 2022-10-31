@@ -8,7 +8,8 @@
 
         int i;
 
-
+        private int cmp_count = 0;
+        private int mov_count = 0;
         public void input()
         {
             while(true)
@@ -55,7 +56,24 @@
         }
         public void q_sort(int low, int high)
         {
-            int pivot, i, j;
+            int pivot, i, RP;
+            if (low > high)
+                return;
+
+            i = low + 1;
+            RP = high;
+
+            pivot = reziq[low];
+
+            while(i <= RP)
+            {
+                while((reziq[i] <= pivot && (i <= high))
+                {
+                    i++;
+                    cmp_count++;
+                }
+
+            }
         }
     }
 }
