@@ -123,17 +123,18 @@
                         myList.input();
                         myList.BubbleSortArray();
                         break;
+
                     case 2:
-                        Console.WriteLine("");
-                        Console.WriteLine("..................");
-                        Console.WriteLine("QuickSort");
-                        Console.WriteLine("..................");
-                        myList.input();
-                        myList.swap
+
+                        Console.WriteLine("Exit. ");
+                        break;
+                    default:
+                        Console.WriteLine("error");
+                        break;
                 }
                 Console.WriteLine("\n\nPress Return to Exit. ");
                 Console.ReadLine();
-            } while(pilihanmenu != 3);
+            } while(pilihanmenu != 2);
         }
     }
 }
